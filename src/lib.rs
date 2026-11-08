@@ -11,7 +11,7 @@ pub mod probe;
 pub mod regs;
 pub mod usb_device;
 
-use clap::{ValueEnum, builder::PossibleValue};
+use clap::{builder::PossibleValue, ValueEnum};
 use probe::WchLink;
 
 pub use crate::error::{Error, Result};
@@ -333,6 +333,7 @@ impl RiscvChip {
                 | RiscvChip::CH32H41X
                 | RiscvChip::CH32M030
                 | RiscvChip::CH32X3X5
+                | RiscvChip::CH585
                 | RiscvChip::CH59X
         )
     }
